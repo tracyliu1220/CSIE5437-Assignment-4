@@ -30,5 +30,5 @@ make
 
 Run the executable. (under directory `build`)
 ```
-./net
+./main
 ```

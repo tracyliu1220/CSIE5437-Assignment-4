@@ -48,4 +48,4 @@ endif()
 ### add_executable( test demo-simple-example.cpp )
 
 add_library(my_library OBJECT nn.cpp utils.cpp ckks_helper.cpp)
-add_executable(net net.cpp $<TARGET_OBJECTS:my_library>)
+add_executable(main main.cpp $<TARGET_OBJECTS:my_library>)
