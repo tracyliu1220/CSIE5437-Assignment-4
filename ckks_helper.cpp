@@ -9,10 +9,17 @@ CKKSHelper::CKKSHelper(int depth) : depth(depth) {
 }
 
 CryptoContext<DCRTPoly> CKKSHelper::get_context(int computation_depth) {
-  /*
-   *  Reference:
-   * https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/advanced-ckks-bootstrapping.cpp
-   */
+  // Reference:
+  //  https://github.com/openfheorg/openfhe-development/blob/main/src/pke/examples/advanced-ckks-bootstrapping.cpp
+  //==================================================================================
+  // BSD 2-Clause License
+  //
+  // Copyright (c) 2014-2022, NJIT, Duality Technologies Inc. and other contributors
+  //
+  // All rights reserved.
+  //
+  // Author TPOC: contact@openfhe.org
+  //==================================================================================
 
   // Step 1: Set CryptoContext
   CCParams<CryptoContextCKKSRNS> parameters;
